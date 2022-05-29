@@ -1,0 +1,14 @@
+{% extends 'face_analyse/base.html' %}
+{% load static %}
+
+{% block css_files %}
+    <link ref="stylesheet" href="{% static 'face_analyse/index.css' %}">
+{% endblock %}
+
+{% block page_title %}
+    Face recognition
+{% endblock %}
+
+{% block content %}
+    <button><a href="{% url 'unlock' %}">Unlock</a></button>
+{% endblock %}
